@@ -119,6 +119,16 @@ h1 img {
   transform-origin: center; /* Ensure scaling happens from the center */
 }
 
+.achievement {
+  min-height: 28px;
+  margin: 0 0 18px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: bold;
+  color: #159A48;
+}
+
 @keyframes popUp {
   0% {
     transform: scale(0.5); /* Start scaling from the center */
