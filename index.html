@@ -1,23 +1,43 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Water Quest</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Water Quest | charity: water</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="container">
+  <main class="container">
+    <img
+      class="logo"
+      src="img/charity-water-logo.png"
+      alt="charity: water logo"
+    >
+
     <h1>Water Quest</h1>
-    <p class="game-instructions">Collect 20 items to complete the game!</p>
+
+    <p class="game-instructions">
+      Catch 20 yellow water cans in 30 seconds to win!
+    </p>
+
     <div class="stats">
       <p>Cans Collected: <span id="current-cans">0</span></p>
       <p>Time Left: <span id="timer">30</span>s</p>
     </div>
-    <div id="achievements" class="achievement"></div>
+
+    <div
+      id="achievements"
+      class="achievement"
+      aria-live="polite"
+    ></div>
+
     <div class="game-grid"></div>
-    <button id="start-game">Start Game</button>
-  </div>
-  <script src="script.js"></script>
+
+    <button id="start-game" type="button">Start Game</button>
+
+    <p class="footer">Every drop counts. 💧</p>
+  </main>
 </body>
 </html>
